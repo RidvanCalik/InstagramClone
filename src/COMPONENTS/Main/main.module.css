@@ -1,5 +1,76 @@
-#Main {
-    flex: 92;
-    display: flex;
+.Main {
+    height: 92vh;
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content{
+    width: 935px;
+    height: 593px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LeftSide {
+    width: 380px;
+    height: 581px;
+    background-image: url('../../../public/IMAGES/Main-Content-LeftSide/bg.png');
+    background-position: -40px 0px;
+    background-size: 460px 630px;
+  
+ 
+}
+.ChangingIMG{
+    width: 250px;
+    height: 538px;
+    position: relative;
+    left: 45px;
+    top: 25px;
+    transition: 200ms;
+    animation: ChangeToIMG 10s infinite;
+    transition: opacity .1s ease-in-out;
+    content: url("../../../public/IMAGES/Main-Content-LeftSide/1.png");
+    
+}
+
+.RightSide {
+    width: 380px;
+    height: 518px;
+    background-color: rgb(65, 77, 36);
+}
+
+@keyframes ChangeToIMG {
+    0% {
+        opacity: 1;
+        content: url("../../../public/IMAGES/Main-Content-LeftSide/1.png");
+    }
+    10%{
+        opacity: .7;
+    }
+    25%  {
+        opacity: 1;
+        content: url("../../../public/IMAGES/Main-Content-LeftSide/2.png");
+    }
+    38%{
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+        content: url("../../../public/IMAGES/Main-Content-LeftSide/3.png");
+    }
+    63%{
+        opacity: 0.7;
+    }
+    75% {
+        opacity: 1;
+        content: url("../../../public/IMAGES/Main-Content-LeftSide/4.png");
+    }
+    84%{
+        opacity: .7;
+    }
+    
 }

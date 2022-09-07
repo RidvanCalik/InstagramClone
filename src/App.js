@@ -4,8 +4,8 @@ import Main from './COMPONENTS/Main';
 function App() {
   return (
     <div className="App">
-      <Main className="Main"/>
-      <Footer className="Footer"/>
+      <Main />
+      <Footer />
     </div>
   );
 }

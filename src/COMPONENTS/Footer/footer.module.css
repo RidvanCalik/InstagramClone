@@ -1,4 +1,5 @@
-#Footer {
-    flex: 8;
+.Footer {
+    height: 8vh;
     background-color: blue;
+    margin-bottom: 52px;
 }
